@@ -7,8 +7,19 @@
     <title>Operação Corujinha | Palhaços da Medicina</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body { margin: 0; padding: 0; background-color: var(--color-bg-main); }
-        object { width: 100%; display: block; border: none; overflow: hidden; transition: height 0.3s ease; }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-bg-main);
+        }
+
+        object {
+            width: 100%;
+            display: block;
+            border: none;
+            overflow: hidden;
+            transition: height 0.3s ease;
+        }
     </style>
 </head>
 
@@ -29,7 +40,7 @@
     <object id="footer" type="text/html" data="components/footer.html?id=footer"></object>
 
     <script>
-        window.addEventListener('message', function(e) {
+        window.addEventListener('message', function (e) {
             if (e.data && e.data.type === 'resize') {
                 const obj = document.getElementById(e.data.id);
                 if (obj) {
