@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Benefícios</title>
+</head>
+
+<body style="background: transparent; overflow: hidden;">
+    <div style="padding: 24px 16px;">
+        <div class="grid-4">
+            <div class="card">
+                <h3 class="card-title">titulo</h3>
+                <ul class="list-disc">
+                    <li>itens</li>
+
+                </ul>
+            </div>
+            <div class="card">
+                <h3 class="card-title">titulo</h3>
+                <ul class="list-disc">
+                    <li>itens</li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function sendHeight() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        if (id) {
+            window.parent.postMessage({ type: 'resize', id: id, height: document.body.scrollHeight }, '*');
+        }
+    }
+    window.addEventListener('load', sendHeight);
+    window.addEventListener('resize', sendHeight);
+    new MutationObserver(sendHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
+</script>
+
+</html>
