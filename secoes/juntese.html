@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Junte-se a Nós</title>
+</head>
+
+<body style="background: transparent; overflow: hidden;">
+    <section id="processo-seletivo" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Junte-se à Operação Corujinha</h2>
+            <p class="section-subtitle">
+                subtitulo:
+                </br>
+
+            </p>
+
+            <div class="grid-3">
+                <div class="card">
+                    <span class="step-number">01</span>
+                    <h3 class="card-title">titulo</h3>
+                    <p class="step-text">
+                        texto
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="step-number">02</span>
+                    <h3 class="card-title">titulo</h3>
+                    <p class="step-text mb-2">texto</p>
+                    <ul class="list-disc">
+                        <li>itens</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="grid-2" style="margin-top: 64px;">
+                <div class="card">
+                    <h3 class="card-title text-brand">Avaliação aqui</h3>
+                    <ul class="list-disc">
+                        <li>itens avaliação</li>
+                    </ul>
+                </div>
+                <div class="card card-warning">
+                    <h3 class="card-title">Compromissos</h3>
+                    <ul class="list-disc">
+                        <li>itens compromisso</li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <p class="cta-hint">
+                    Os resultados serão divulgados nas redes sociais do projeto e murais da universidade.
+                </p>
+                <a href="#" class="btn-primary">Acessar Formulário de Inscrição</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function sendHeight() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+            if (id) {
+                window.parent.postMessage({ type: 'resize', id: id, height: document.body.scrollHeight }, '*');
+            }
+        }
+        window.addEventListener('load', sendHeight);
+        window.addEventListener('resize', sendHeight);
+        new MutationObserver(sendHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
+    </script>
+</body>
+
+</html>

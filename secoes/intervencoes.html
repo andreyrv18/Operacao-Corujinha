@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Intervenções</title>
+
+</head>
+
+<body style="background: transparent; overflow: hidden;">
+    <section id="atividades" class="section section-white">
+        <div class="container">
+            <h2 class="section-title">Nossas Intervenções</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">titulo</h3>
+                    <p class="text-muted mb-4">subtitulo:</p>
+                    <ul class="list-disc">
+                        <li>itens</li>
+
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">titulo</h3>
+                    <p class="text-muted mb-2">subtitulo:</p>
+                    <p class="text-muted mb-4"></p>
+
+                    <div style="margin-top: 16px;">
+                        <span class="badge">locais aqui</span>
+                        <span class="badge"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-warning" style="margin-top: 64px;">
+                <h3 class="card-title">normas aqui</h3>
+                <p class="text-muted text-sm mb-4">
+                </p>
+                <div class="grid-2" style="gap: 20px;">
+                    <ul class="list-disc">
+                        <li>itens normas aqui</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ul class="list-disc">
+                        <li class="text-warning">itens normas aqui</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function sendHeight() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+            if (id) {
+                window.parent.postMessage({ type: 'resize', id: id, height: document.body.scrollHeight }, '*');
+            }
+        }
+        window.addEventListener('load', sendHeight);
+        window.addEventListener('resize', sendHeight);
+        new MutationObserver(sendHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
+    </script>
+</body>
+
+</html>
