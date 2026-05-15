@@ -11,7 +11,7 @@ Humanização hospitalar através do riso terapêutico
 | **Hero** | [Andrey] |
 | **Quem Atendemos** | [Michael] |
 | **Nossas Intervenções** | [Adrian] |
-| **Junte-se à Operação Corujinha** | [vago] |
+| **Junte-se à Operação Corujinha** | [Andrey] |
 | **Benefícios Esperados** | [Nicolas] |
 | **Footer** | [Andrey] |
 
