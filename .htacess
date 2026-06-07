@@ -1,0 +1,22 @@
+# Cache para imagens, CSS e JS
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Imagens: 1 ano
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+
+  # CSS e JS: 1 mês
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # HTML: sempre atualizar
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
+
+# Compressão Gzip
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript
+</IfModule>

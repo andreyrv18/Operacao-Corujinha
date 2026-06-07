@@ -5,17 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Operação Corujinha | Palhaços da Medicina</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.min.css">
+    <meta name="description" content="Operação Corujinha - palhaços na medicina">
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GFQ6YQ8SYJ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFQ6YQ8SYJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-GFQ6YQ8SYJ');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-GFQ6YQ8SYJ');
+    </script>
     <style>
+
         body {
             margin: 0;
             padding: 0;
@@ -34,44 +40,44 @@
 
 <body>
 
-    <object id="navbar" type="text/html" data="components/navbar.html?id=navbar"></object>
+<object id="navbar" type="text/html" data="components/navbar.html?id=navbar"></object>
 
-    <main>
-        <object id="hero" data="secoes/hero.html?id=hero" type="text/html"></object>
+<main>
+    <object id="hero" data="secoes/hero.html?id=hero" type="text/html"></object>
 
-        <object id="sobre" data="secoes/atendimento.html?id=sobre" type="text/html"></object>
+    <object id="sobre" data="secoes/atendimento.html?id=sobre" type="text/html"></object>
 
-        <object id="atividades" data="secoes/intervencoes.html?id=atividades" type="text/html"></object>
+    <object id="atividades" data="secoes/intervencoes.html?id=atividades" type="text/html"></object>
 
-        <object id="processo-seletivo" data="secoes/juntese.html?id=processo-seletivo" type="text/html"></object>
-    </main>
+    <object id="processo-seletivo" data="secoes/juntese.html?id=processo-seletivo" type="text/html"></object>
+</main>
 
-    <object id="footer" type="text/html" data="components/footer.html?id=footer"></object>
+<object id="footer" type="text/html" data="components/footer.html?id=footer"></object>
 
-    <script>
-        window.addEventListener('message', function (e) {
-            if (e.data && e.data.type === 'resize') {
-                const obj = document.getElementById(e.data.id);
-                if (obj) {
-                    obj.style.height = e.data.height + 'px';
+<script>
+    window.addEventListener('message', function (e) {
+        if (e.data && e.data.type === 'resize') {
+            const obj = document.getElementById(e.data.id);
+            if (obj) {
+                obj.style.height = e.data.height + 'px';
+            }
+        }
+        if (e.data && e.data.type === 'scroll') {
+            if (e.data.target === 'top') {
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            } else {
+                const targetEl = document.getElementById(e.data.target);
+                if (targetEl) {
+                    const rect = targetEl.getBoundingClientRect();
+                    window.scrollTo({
+                        top: window.scrollY + rect.top - 80, // 80px offset for navbar
+                        behavior: 'smooth'
+                    });
                 }
             }
-            if (e.data && e.data.type === 'scroll') {
-                if (e.data.target === 'top') {
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                } else {
-                    const targetEl = document.getElementById(e.data.target);
-                    if (targetEl) {
-                        const rect = targetEl.getBoundingClientRect();
-                        window.scrollTo({
-                            top: window.scrollY + rect.top - 80, // 80px offset for navbar
-                            behavior: 'smooth'
-                        });
-                    }
-                }
-            }
-        });
-    </script>
+        }
+    });
+</script>
 </body>
 
 </html>
