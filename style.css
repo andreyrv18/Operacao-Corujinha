@@ -1,14 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit-v15-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit-v15-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+/* Adicione os outros pesos (300, 500, 600, 800) se estiver usando */
 
 /* =========================================
    1. VARIÁVEIS (Design Tokens)
    ========================================= */
 :root {
-    --color-primary: #FF6B6B; /* Vibrant Coral */
+    --color-primary: #E03131; /* Electric Blood */
     --color-primary-hover: #FA5252;
     --color-primary-disable: #9C7F7D;
-    --color-secondary: #4DABF7; /* Sky Blue */
-    --color-primary-light: #FFE3E3;
+    --color-secondary: #1971C2; /* Haddock’s Sweater */
+    --color-primary-light: #c92a2a /* Peri Peri*/;
     --color-primary-dark: #E03131;
 
     --color-bg-main: #F8F9FA;
@@ -235,7 +249,7 @@ object {
 .hero-tag {
     display: inline-block;
     background: var(--color-primary-light);
-    color: var(--color-primary-dark);
+    color: var(--color-bg-white);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -299,9 +313,15 @@ object {
 }
 
 @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0px); }
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 /* =========================================
@@ -491,6 +511,7 @@ object {
     color: var(--color-primary);
 }
 
+
 .dev-section {
     border-top: 1px solid var(--color-footer-border);
     margin-top: 40px;
@@ -527,6 +548,20 @@ object {
 
 .student-names a:hover {
     color: var(--color-secondary);
+}
+
+.direitos {
+    font-size: 0.75rem;
+    color: var(--color-footer-text);
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.direitos img {
+    width: 24px; height: auto; object-fit: contain;
 }
 
 /* =========================================
