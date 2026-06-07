@@ -308,6 +308,26 @@ object {
    6. COMPONENTES: BOTÕES, CARDS E BADGES
    ========================================= */
 .btn-primary {
+    background: linear-gradient(135deg, var(--color-primary));
+    color: var(--color-bg-white);
+    padding: 16px 40px;
+    border-radius: var(--radius-full);
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 15px var(--color-primary);
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+}
+
+.btn-primary-disable {
     background: linear-gradient(135deg, var(--color-primary-disable));
     color: var(--color-bg-white);
     padding: 16px 40px;
@@ -319,12 +339,7 @@ object {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: 0 4px 15px var(--color-primary-disable);
     border: none;
-    cursor: pointer;
-}
-
-.btn-primary:hover {
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.5);
+    cursor: not-allowed;
 }
 
 .grid-2 {
