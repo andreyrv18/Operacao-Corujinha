@@ -2,9 +2,9 @@
 <html lang="pt-BR">
 
 <head>
+    <title>Operação Corujinha | Palhaços da Medicina</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operação Corujinha | Palhaços da Medicina</title>
     <link rel="stylesheet" href="style.min.css">
     <meta name="description" content="Operação Corujinha - palhaços na medicina">
     <!-- Google tag (gtag.js) -->
@@ -40,44 +40,288 @@
 
 <body>
 
-<object id="navbar" type="text/html" data="components/navbar.html?id=navbar"></object>
+<nav class="navbar">
+    <div class="container navbar-container">
+        <a href="index.html" target="_parent" class="navbar-brand">
+            <img src="assets/logo_corujinha36x40.webp" fetchpriority="high" alt="Logo Operação Corujinha">
+            <span class="text-brand">Operação Corujinha</span>
+        </a>
+        <div class="nav-links">
+            <a href="index.html#sobre" target="_parent">Sobre</a>
+            <a href="index.html#atividades" target="_parent">Atividades</a>
+            <a href="index.html#processo-seletivo" target="_parent">Junte-se a nós</a>
+        </div>
+    </div>
+</nav>
 
 <main>
-    <object id="hero" data="secoes/hero.html?id=hero" type="text/html"></object>
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-image">
+                <img src="assets/logo_corujinha_semcontorno.webp" fetchpriority="high" alt="Mascote Operação Corujinha">
+            </div>
+            <div class="hero-text">
+                <span class="hero-tag">Humanização Hospitalar</span>
+                <h1>Operação Corujinha <br><span class="text-brand">Palhaços da Medicina</span></h1>
+                <p class="hero-quote">
+                    "Um sorriso pode não curar a doença, mas fortalece o coração para enfrentá-la."
+                </p>
+                <a href="index.html#processo-seletivo" target="_parent" class="btn-primary">Quero ser voluntário</a>
+            </div>
+        </div>
+    </header>
+    <section id="sobre" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Quem Atendemos</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <h3 class="card-title">Público alvo</h3>
 
-    <object id="sobre" data="secoes/atendimento.html?id=sobre" type="text/html"></object>
+                    <ul class="list-disc">
+                        <li>Pacientes hospitalizados</li>
+                        <li>Familiares acompanhantes</li>
+                        <li>Profissionais da saúde</li>
+                        <li>Equipe hospitalar</li>
 
-    <object id="atividades" data="secoes/intervencoes.html?id=atividades" type="text/html"></object>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Onde atuamos</h3>
+                    <p class="text-muted">Hospitais parceiros da FAPI e unidade de saúde autorizadas</p>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Objetivos</h3>
+                    <ul class="list-disc">
+                        <li>Levar momentos de alegria e descontração aos pacientes</li>
+                        <li>Reduzir a tensão emocional do ambiente hospitalar</li>
+                        <li>Contribuir para a promoção da saúde mental no ambiente hospitalar</li>
+                        <li>Desenvolver nos estudantes habilidades de empatia e cuidado humanizado</li>
 
-    <object id="processo-seletivo" data="secoes/juntese.html?id=processo-seletivo" type="text/html"></object>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="section-title mt-8" style="margin-top: 100px;">Benefícios Esperados</h2>
+
+            <div style="padding: 24px 16px;">
+                <div class="grid-4">
+                    <div class="card">
+                        <h3 class="card-title">Pacientes</h3>
+                        <ul class="list-disc">
+                            <li>Melhora do humor</li>
+                            <li>Redução da ansiedade</li>
+                            <li>Sensação de acolhimento</li>
+                            <li>Fortalecimento emocional</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Familiares</h3>
+                        <ul class="list-disc">
+                            <li>Alívio da tensão emocional</li>
+                            <li>Maior esperança</li>
+
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Estudantes</h3>
+                        <ul class="list-disc">
+                            <li>Desenvolvimento de empatia</li>
+                            <li>Prática de humanização no cuidado</li>
+                            <li>Formação médica mais sensível e ética</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Hospitais</h3>
+                        <ul class="list-disc">
+                            <li>Ambiente mais acolhedor</li>
+                            <li>Melhoria da experiência do paciente</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="atividades" class="section section-white">
+        <div class="container">
+            <h2 class="section-title">Nossas Intervenções</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3 class="card-title">O que fazemos</h3>
+                    <p class="text-muted mb-4">Durante as visitas os estudantes poderão</p>
+                    <ul class="list-disc">
+                        <li>vestir jalecos decorados de forma lúdica.</li>
+                        <li>utilizar nariz de palhaço</li>
+                        <li>maquiagem leve e divertida</li>
+                        <li>acessórios lúdicos (chapéus, gravatas coloridas)</li>
+
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="card-title">Onde e Quando</h3>
+                    <p class="text-muted mb-2"><strong>Frequência de visitas:</strong> 1 ou 2 vezes por semana</p>
+                    <p class="text-muted mb-4"><strong>Duração: </strong>duração média de 1 a 2 horas</p>
+
+                    <div style="margin-top: 16px;">
+                        <span class="badge">Hospital Parceiro da FAPI 1.</span>
+                        <span class="badge">Hospital Parceiro da FAPI 2.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-warning" style="margin-top: 64px;">
+                <h3 class="card-title">Normas e cuidados éticos</h3>
+                <p class="text-muted text-sm mb-4">Para garantir segurança e respeito
+                </p>
+                <div class="grid-2" style="gap: 20px;">
+                    <ul class="list-disc">
+                        <li>Seguir normas de higiene hospitalar</li>
+                        <li>Respeitar pacientes que não desejam interação</li>
+                        <li>Não interferir em procedimentos médicos</li>
+                    </ul>
+                    <ul class="list-disc">
+                        <li class="text-warning">Evitar contato físico sem autorização</li>
+                        <li>Respeitar momentos de dor ou repouso</li>
+                        <li>Manter postura ética e profissional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="processo-seletivo" class="section section-light">
+        <div class="container">
+            <h2 class="section-title">Junte-se à Operação Corujinha</h2>
+            <p class="section-subtitle">
+                Buscamos estudantes de medicina comprometidos com a humanização do cuidado.
+
+                <br>
+                <strong>Público:</strong> Alunos matriculados a partir do 2º período (1º período mediante avaliação).
+
+            </p>
+            <br>
+            <div class="grid-3">
+                <div class="card">
+                    <span class="step-number">01</span>
+                    <h3 class="card-title">Inscrição</h3>
+                    <p class="step-text">
+                        Preenchimento de formulário com dados, disponibilidade e motivação:
+                        "Por que você deseja participar?"
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="step-number">02</span>
+                    <h3 class="card-title">Entrevista</h3>
+                    <p class="step-text mb-2">Serão avaliados aspectos como:
+                    </p>
+                    <ul class="list-disc">
+                        <li>Maturidade emocional</li>
+                        <li>Lidar com sofrimento
+                        </li>
+                        <li>Postura ética no hospital
+                        </li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <span class="step-number">03</span>
+                    <h3 class="card-title">Treinamento</h3>
+                    <p class="step-text mb-2">Capacitação obrigatória em:
+
+                    </p>
+
+                    <ul class="list-disc">
+                        <li>Humanização e Ética
+                        </li>
+                        <li>Biossegurança
+                        </li>
+                        <li>Palhaçaria Terapêutica
+                        </li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="grid-2" style="margin-top: 64px;">
+                <div class="card">
+                    <h3 class="card-title text-brand">Critérios de Avaliação
+                    </h3>
+                    <ul class="list-disc">
+                        <li>Empatia e Sensibilidade
+                        </li>
+                        <li>Capacidade de comunicação
+                        </li>
+                        <li>Responsabilidade e comprometimento
+                        </li>
+                        <li>Trabalho em equipe
+                        </li>
+                        <li>Motivação para participar do projeto
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="card card-warning">
+                    <h3 class="card-title">Compromissos do Estudante
+                    </h3>
+                    <ul class="list-disc">
+                        <li>Participar dos treinamentos obrigatórios
+                        </li>
+                        <li>Comparecer às visitas programadas
+                        </li>
+                        <li>Respeitar normas do hospital
+                        </li>
+                        <li>Manter postura ética e humanizada
+                        </li>
+                        <li>Preservar o sigilo e dignidade dos pacientes
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cta-container">
+                <p class="cta-hint">
+                    Os resultados serão divulgados nas redes sociais do projeto e murais da universidade.
+                </p>
+                <a class="btn-primary-disable">Acessar Formulário de Inscrição</a>
+            </div>
+        </div>
+    </section>
+
 </main>
 
-<object id="footer" type="text/html" data="components/footer.html?id=footer"></object>
+<footer class="footer">
+    <div class="container">
 
-<script>
-    window.addEventListener('message', function (e) {
-        if (e.data && e.data.type === 'resize') {
-            const obj = document.getElementById(e.data.id);
-            if (obj) {
-                obj.style.height = e.data.height + 'px';
-            }
-        }
-        if (e.data && e.data.type === 'scroll') {
-            if (e.data.target === 'top') {
-                window.scrollTo({top: 0, behavior: 'smooth'});
-            } else {
-                const targetEl = document.getElementById(e.data.target);
-                if (targetEl) {
-                    const rect = targetEl.getBoundingClientRect();
-                    window.scrollTo({
-                        top: window.scrollY + rect.top - 80, // 80px offset for navbar
-                        behavior: 'smooth'
-                    });
-                }
-            }
-        }
-    });
-</script>
+        <div class="footer-main">
+            <p class="footer-tagline">Humanização hospitalar através do riso terapêutico.</p>
+            <div class="footer-credits">
+                <span><strong>Proponente:</strong> Milena Canatto</span>
+                <span><strong>Tutoria:</strong> Profª Daniela Ferreira</span></div>
+        </div>
+
+        <div class="dev-section">
+            <div class="dev-team">
+                Desenvolvido pela Equipe de ADS • FAPI
+            </div>
+            <div class="student-names">
+                <a href="https://github.com/andreyrv18" target="_blank">@Andrey</a><span>|</span>
+                <a href="https://github.com/AdrianD0om" target="_blank">@Adrian</a><span>|</span>
+                <a href="https://github.com/NickWilk456" target="_blank">@Nicolas</a><span>|</span>
+                <a href="https://github.com/Michaelvila" target="_blank">@Michael</a><span>|</span>
+            </div>
+            <p
+                    style="font-size: 0.75rem; color: #64748b; margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <img src="assets/logo_corujinha36x40.webp" loading="lazy" alt="Logo Operação Corujinha"
+                     style="width: 24px; height: auto; object-fit: contain;">
+                © 2026 Operação Corujinha. Todos os direitos reservados.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
 </body>
 
 </html>
