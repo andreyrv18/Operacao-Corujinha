@@ -11,13 +11,29 @@
     <meta name="description"
           content="Operação Corujinha - Projeto de humanização hospitalar da FAPI que leva alegria e acolhimento a pacientes através do riso terapêutico. Seja voluntário!">
     <!--    Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+
     <!-- CSS -->
     <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
+    <noscript>
+        <link rel="stylesheet" href="style.min.css">
+    </noscript>
+    <link rel="preload" as="image" href="assets/logo_corujinha_semcontorno.webp" type="image/webp">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFQ6YQ8SYJ"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-GFQ6YQ8SYJ');
+    </script>
+
     <style>
         :root {
             --color-primary: #E03131; /* Electric Blood */
@@ -50,23 +66,6 @@
             --radius-full: 9999px;
         }
 
-    </style>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFQ6YQ8SYJ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-GFQ6YQ8SYJ');
-    </script>
-
-    <style>
-
         body {
             margin: 0;
             padding: 0;
@@ -81,6 +80,8 @@
             transition: height 0.3s ease;
         }
     </style>
+
+
 </head>
 
 <body>
