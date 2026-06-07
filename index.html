@@ -4,9 +4,53 @@
 <head>
     <title>Operação Corujinha | Palhaços da Medicina</title>
     <meta charset="UTF-8">
+    <!--  Cache para github pages   -->
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <!-- Meta Tags-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Operação Corujinha - palhaços na medicina">
-    <link rel="stylesheet" href="style.min.css">
+    <meta name="description"
+          content="Operação Corujinha - Projeto de humanização hospitalar da FAPI que leva alegria e acolhimento a pacientes através do riso terapêutico. Seja voluntário!">
+    <!--    Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <!-- CSS -->
+    <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="style.min.css"></noscript>
+    <style>
+        :root {
+            --color-primary: #E03131; /* Electric Blood */
+            --color-primary-hover: #FA5252;
+            --color-primary-disable: #9C7F7D;
+            --color-secondary: #1971C2; /* Haddock’s Sweater */
+            --color-primary-light: #c92a2a /* Peri Peri*/;
+            --color-primary-dark: #E03131;
+
+            --color-bg-main: #F8F9FA;
+            --color-bg-white: #FFFFFF;
+            --color-text-dark: #212529;
+            --color-text-muted: #495057;
+            --color-border: #E9ECEF;
+
+            --color-warning: #F59F00;
+            --color-warning-border: #FFD43B;
+
+            --color-footer-bg: #212529;
+            --color-footer-text: #ADB5BD;
+            --color-footer-highlight: #F8F9FA;
+            --color-footer-border: #343A40;
+
+            --font-main: 'Outfit', sans-serif;
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.12);
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-full: 9999px;
+        }
+
+    </style>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFQ6YQ8SYJ"></script>
     <script>
@@ -20,6 +64,7 @@
 
         gtag('config', 'G-GFQ6YQ8SYJ');
     </script>
+
     <style>
 
         body {
@@ -58,7 +103,8 @@
     <header class="hero">
         <div class="container hero-content">
             <div class="hero-image">
-                <img src="assets/logo_corujinha_semcontorno.webp" fetchpriority="high" alt="Mascote Operação Corujinha">
+                <img src="assets/logo_corujinha_semcontorno.webp" height="480" width="400" fetchpriority="high"
+                     alt="Mascote Operação Corujinha">
             </div>
             <div class="hero-text">
                 <span class="hero-tag">Humanização Hospitalar</span>
@@ -311,10 +357,10 @@
                 <a href="https://github.com/NickWilk456" target="_blank">@Nicolas</a><span>|</span>
                 <a href="https://github.com/Michaelvila" target="_blank">@Michael</a><span>|</span>
             </div>
-            <p
-                    style="font-size: 0.75rem; color: #64748b; margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 8px;">
-                <img src="assets/logo_corujinha36x40.webp" loading="lazy" alt="Logo Operação Corujinha"
-                     style="width: 24px; height: auto; object-fit: contain;">
+            <p class="direitos">
+                <img src="assets/logo_corujinha36x40.webp" height="44" width="36" loading="lazy"
+                     alt="Logo Operação Corujinha"
+                >
                 © 2026 Operação Corujinha. Todos os direitos reservados.
             </p>
         </div>
