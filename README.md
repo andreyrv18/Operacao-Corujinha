@@ -1,6 +1,9 @@
 # Operacao-Corujinha
 Humanização hospitalar através do riso terapêutico
 
+## Site oficial:
+https://operacaocorujinha.com.br/
+
 ## Divisão de tarefas
 
 ### Front-end
@@ -14,3 +17,5 @@ Humanização hospitalar através do riso terapêutico
 | **Junte-se à Operação Corujinha** | [Andrey] |
 | **Benefícios Esperados** | [Nicolas] |
 | **Footer** | [Andrey] |
+
+### Otimiza com base no Lighthouse
