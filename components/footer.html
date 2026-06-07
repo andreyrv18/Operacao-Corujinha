@@ -7,51 +7,50 @@
 </head>
 
 <body style="background: transparent; overflow: hidden;">
-    <footer class="footer">
-        <div class="container">
+<footer class="footer">
+    <div class="container">
 
-            <div class="footer-main">
-                <p class="footer-tagline">Humanização hospitalar através do riso terapêutico.</p>
-                <div class="footer-credits">
-                    <span><strong>Proponente:</strong> Milena Canatto</span>
-                    <span><strong>Tutoria:</strong> Profª Daniela Ferreira</span>
-                    <span><strong>Apoio:</strong> LIAMDOR</span>
-                </div>
-            </div>
-
-            <div class="dev-section">
-                <div class="dev-team">
-                    Desenvolvido pela Equipe de ADS • FAPI
-                </div>
-                <div class="student-names">
-                    <a href="https://github.com/andreyrv18" target="_blank">@Andrey</a><span>|</span>
-                    <a href="https://github.com/AdrianD0om" target="_blank">@Adrian</a><span>|</span>
-                    <a href="https://github.com/NickWilk456" target="_blank">@Nicolas</a><span>|</span>
-                    <a href="https://github.com/Michaelvila" target="_blank">@Michael</a>
-                </div>
-                <p
-                    style="font-size: 0.75rem; color: #64748b; margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 8px;">
-                    <img src="../assets/logo_corujinha.webp" alt="Logo Operação Corujinha"
-                        style="width: 24px; height: auto; object-fit: contain;">
-                    © 2026 Operação Corujinha. Todos os direitos reservados.
-                </p>
-            </div>
-
+        <div class="footer-main">
+            <p class="footer-tagline">Humanização hospitalar através do riso terapêutico.</p>
+            <div class="footer-credits">
+                <span><strong>Proponente:</strong> Milena Canatto</span>
+                <span><strong>Tutoria:</strong> Profª Daniela Ferreira</span></div>
         </div>
-    </footer>
 
-    <script>
-        function sendHeight() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const id = urlParams.get('id');
-            if (id) {
-                window.parent.postMessage({ type: 'resize', id: id, height: document.body.scrollHeight }, '*');
-            }
+        <div class="dev-section">
+            <div class="dev-team">
+                Desenvolvido pela Equipe de ADS • FAPI
+            </div>
+            <div class="student-names">
+                <a href="https://github.com/andreyrv18" target="_blank">@Andrey</a><span>|</span>
+                <a href="https://github.com/AdrianD0om" target="_blank">@Adrian</a><span>|</span>
+                <a href="https://github.com/NickWilk456" target="_blank">@Nicolas</a><span>|</span>
+                <a href="https://github.com/Michaelvila" target="_blank">@Michael</a><span>|</span>
+            </div>
+            <p
+                    style="font-size: 0.75rem; color: #64748b; margin-top: 12px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                <img src="../assets/logo_corujinha.webp" alt="Logo Operação Corujinha"
+                     style="width: 24px; height: auto; object-fit: contain;">
+                © 2026 Operação Corujinha. Todos os direitos reservados.
+            </p>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+    function sendHeight() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        if (id) {
+            window.parent.postMessage({type: 'resize', id: id, height: document.body.scrollHeight}, '*');
         }
-        window.addEventListener('load', sendHeight);
-        window.addEventListener('resize', sendHeight);
-        new MutationObserver(sendHeight).observe(document.body, { childList: true, subtree: true, attributes: true });
-    </script>
+    }
+
+    window.addEventListener('load', sendHeight);
+    window.addEventListener('resize', sendHeight);
+    new MutationObserver(sendHeight).observe(document.body, {childList: true, subtree: true, attributes: true});
+</script>
 </body>
 
 </html>
