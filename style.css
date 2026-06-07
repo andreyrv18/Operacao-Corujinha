@@ -5,6 +5,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 @font-face {
     font-family: 'Outfit';
     src: url('assets/fonts/outfit-v15-latin-700.woff2') format('woff2');
@@ -12,6 +13,7 @@
     font-style: normal;
     font-display: swap;
 }
+
 /* Adicione os outros pesos (300, 500, 600, 800) se estiver usando */
 
 /* =========================================
@@ -189,7 +191,7 @@ object {
     color: var(--color-text-muted);
     font-weight: 600;
     font-size: 1.05rem;
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
     position: relative;
 }
 
@@ -304,8 +306,10 @@ object {
 }
 
 .hero-image img {
-    aspect-ratio: auto;
+    aspect-ratio: 400/480;
+    object-fit: contain;
     width: 100%;
+    height: auto;
     max-width: 400px;
     animation: float 6s ease-in-out infinite;
     position: relative;
@@ -336,8 +340,7 @@ object {
     font-size: 1.1rem;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 4px 15px var(--color-primary);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     border: none;
     cursor: pointer;
 }
@@ -356,8 +359,7 @@ object {
     font-size: 1.1rem;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    box-shadow: 0 4px 15px var(--color-primary-disable);
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     border: none;
     cursor: not-allowed;
 }
@@ -386,7 +388,8 @@ object {
     border-radius: var(--radius-lg);
     padding: 40px 32px;
     box-shadow: var(--shadow-sm);
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     position: relative;
     overflow: hidden;
 }
@@ -453,7 +456,7 @@ object {
     font-weight: 700;
     margin: 4px 8px 8px 0;
     border: 1px solid rgba(77, 171, 247, 0.2);
-    transition: all 0.3s ease;
+    transition: tranform 0.3s ease;
 }
 
 .badge:hover {
@@ -561,7 +564,9 @@ object {
 }
 
 .direitos img {
-    width: 24px; height: auto; object-fit: contain;
+    width: 24px;
+    height: auto;
+    object-fit: contain;
 }
 
 /* =========================================
@@ -610,7 +615,7 @@ object {
     margin-bottom: 16px;
     color: transparent;
     -webkit-text-stroke: 2px var(--color-primary-light);
-    transition: all 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .card:hover .step-number {
@@ -666,7 +671,7 @@ object {
     }
 
     .hero-image img {
-        max-width: 300px;
+        max-width: 150px;
     }
 
     .section-title {
@@ -712,6 +717,10 @@ object {
 
     .hero-text h1 {
         font-size: 2.5rem;
+    }
+
+    .hero-image img {
+        max-width: 150px;
     }
 
     .footer-credits {

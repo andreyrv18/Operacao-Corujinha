@@ -10,9 +10,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
           content="Operação Corujinha - Projeto de humanização hospitalar da FAPI que leva alegria e acolhimento a pacientes através do riso terapêutico. Seja voluntário!">
-    <!--    Fonts -->
+    <!--    preload -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
+    <link rel="preload" href="assets/fonts/outfit-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/outfit-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <!-- CSS -->
     <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
@@ -22,16 +23,23 @@
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFQ6YQ8SYJ"></script>
+    <!-- Remova o script original do GTM do head e coloque isso antes do </body> -->
     <script>
-        window.dataLayer = window.dataLayer || [];
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var script = document.createElement('script');
+                script.src = "https://www.googletagmanager.com/gtag/js?id=G-GFQ6YQ8SYJ";
+                script.async = true;
+                document.head.appendChild(script);
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-
-        gtag('js', new Date());
-
-        gtag('config', 'G-GFQ6YQ8SYJ');
+                script.onload = function() {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+                    gtag('config', 'G-GFQ6YQ8SYJ');
+                };
+            }, 3000); // Espera 3 segundos após a página carregar para iniciar o analytics
+        });
     </script>
 
     <style>
@@ -89,7 +97,7 @@
 <nav class="navbar">
     <div class="container navbar-container">
         <a href="index.html" target="_parent" class="navbar-brand">
-            <img src="assets/logo_corujinha36x40.webp" fetchpriority="high" alt="Logo Operação Corujinha">
+            <img src="assets/logo_corujinha36x40.webp" height="44" width="36" fetchpriority="high" alt="Logo Operação Corujinha">
             <span class="text-brand">Operação Corujinha</span>
         </a>
         <div class="nav-links">
