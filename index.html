@@ -5,10 +5,10 @@
     <title>Operação Corujinha | Palhaços da Medicina</title>
     <meta charset="UTF-8">
 
-<!--    Favicon padrão -->
+    <!--    Favicon padrão -->
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico?v=1">
 
-<!--    Fallback para PNG -->
+    <!--    Fallback para PNG -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
 
     <!--    Icone quando o site for salvo na tela inicial -->
@@ -25,26 +25,30 @@
     <link rel="preload" href="assets/fonts/outfit-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/outfit-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
     <!-- CSS -->
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="style.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.min.css">
     </noscript>
-    <link rel="preload" as="image" href="assets/logo_corujinha_semcontorno.webp" type="image/webp">
+    <link rel="preload" as="image" href="assets/v1logo_corujinha_semcontorno.webp" type="image/webp">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFQ6YQ8SYJ"></script>
     <!-- Remova o script original do GTM do head e coloque isso antes do </body> -->
     <script>
-        window.addEventListener('load', function() {
-            setTimeout(function() {
+        window.addEventListener('load', function () {
+            setTimeout(function () {
                 var script = document.createElement('script');
                 script.src = "https://www.googletagmanager.com/gtag/js?id=G-GFQ6YQ8SYJ";
                 script.async = true;
                 document.head.appendChild(script);
 
-                script.onload = function() {
+                script.onload = function () {
                     window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
+
+                    function gtag() {
+                        dataLayer.push(arguments);
+                    }
+
                     gtag('js', new Date());
                     gtag('config', 'G-GFQ6YQ8SYJ');
                 };
@@ -107,7 +111,8 @@
 <nav class="navbar">
     <div class="container navbar-container">
         <a href="index.html" target="_parent" class="navbar-brand">
-            <img src="assets/logo_corujinha_semcontorno-logo.webp" height="150" width="150" fetchpriority="high" alt="Logo Operação Corujinha">
+            <img src="assets/v1logo_corujinha_semcontorno-logo44.webp" height="44" width="44" fetchpriority="high"
+                 alt="Logo Operação Corujinha">
             <span class="text-brand">Operação Corujinha</span>
         </a>
         <div class="nav-links">
@@ -122,7 +127,7 @@
     <header class="hero">
         <div class="container hero-content">
             <div class="hero-image">
-                <img src="assets/logo_corujinha_semcontorno.webp" height="480" width="400" fetchpriority="high"
+                <img src="assets/v1logo_corujinha_semcontorno.webp" height="480" width="400" fetchpriority="high"
                      alt="Mascote Operação Corujinha">
             </div>
             <div class="hero-text">
@@ -377,7 +382,7 @@
                 <a href="https://github.com/Michaelvila" target="_blank">@Michael</a><span>|</span>
             </div>
             <p class="direitos">
-                <img src="assets/logo_corujinha36x40.webp" height="44" width="36" loading="lazy"
+                <img src="assets/v1logo_corujinha36x40.webp" height="44" width="36" loading="lazy"
                      alt="Logo Operação Corujinha"
                 >
                 © 2026 Operação Corujinha. Todos os direitos reservados.
