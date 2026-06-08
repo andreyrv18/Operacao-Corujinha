@@ -351,7 +351,7 @@ object {
 }
 
 .btn-primary-disable {
-    background: linear-gradient(135deg, var(--color-primary-disable));
+    background: linear-gradient(135deg, var(--color-text-muted));
     color: var(--color-bg-white);
     padding: 16px 40px;
     border-radius: var(--radius-full);
@@ -662,6 +662,19 @@ object {
    8. MEDIA QUERIES (Responsividade Mobile)
    ========================================= */
 @media (max-width: 992px) {
+
+    .btn-primary-disable {
+        background:  var(--color-text-muted);
+        color: var(--color-bg-white);
+        padding: 16px 40px;
+        border-radius: var(--radius-full);
+        font-weight: 700;
+        font-size: 1rem;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        cursor: not-allowed;
+    }
     .hero-content {
         gap: 40px;
     }
@@ -680,6 +693,20 @@ object {
 }
 
 @media (max-width: 768px) {
+
+    .btn-primary-disable {
+        background:  var(--color-text-muted);
+        color: var(--color-bg-white);
+        padding: 12px 20px;
+        border-radius: var(--radius-full);
+        font-weight: 700;
+        font-size: 0.75rem;
+        text-decoration: none;
+        display: inline-block;
+        border: none;
+        cursor: not-allowed;
+    }
+
     .section {
         padding: 60px 0;
     }
